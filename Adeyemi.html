@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adeyemi Adebajo - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="/style.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/94eff9838d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <h1><a href="#home" class="adeyemi">ADEYEMI</a></h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <!-- <li><a href="#languages">Projects</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://github.com/AdeyemiAdebajo">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="intro" class="intro-section">
+      <div class="text-container">
+        <div class="typing-text">
+          <p>Hello! My name is <span>Adeyemi Adebajo</span>.</p>
+          <p>I am passionate about full-stack development and problem-solving.</p>
+          <p>I graduated from Canadore College, where I studied Computer Programmer Analyst. I'm eager to apply my technical skills and creative 
+            mindset to build impactful digital solutions and constantly improve as a developer.</p>
+            
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="Passport.jpg" alt="Adeyemi Adebajo" class="picture" />
+      </div>
+    </section>
+
+    <section id="languages" class="programming-section">
+      <h2>Programming Languages & Tools</h2>
+      <div class="carousel">
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg"  alt="HTML" /></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" alt="CSS" /></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" /></div>
+        <!-- <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" /></div> -->
+        <!-- <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" /></div> -->
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" /></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" /></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" /></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" /></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" /></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" /></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" /></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" /></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original-wordmark.svg" alt="MariaDB"/> </div>
+       
+
+
+
+      </div>
+    </section>
+
+    <section id="contact" class="contact-me">
+      <h2>Let’s Connect and Build Something Awesome!</h2>
+      <p>Reach out to me via social media or drop a message directly using the form below.</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/adeyemi-adebajo-27505724b" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/AdeyemiAdebajo" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="mailto:adeyemibajo@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Adeyemi Adebajo</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carousel').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        speed: 3000,
+        autoplay: true,
+        autoplaySpeed: 0,
+        cssEase: 'linear',
+        infinite: true,
+        arrows: false,
+        dots: false,
+        responsive: [
+          { breakpoint: 768, settings: { slidesToShow: 3 } },
+          { breakpoint: 480, settings: { slidesToShow: 2 } }
+        ]
+      });
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>
