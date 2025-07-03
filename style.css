@@ -57,7 +57,7 @@ body {
   border-radius: 50%;
   border: 4px solid #ffd54f;
 }
-.programming-section {
+.programs,.projects {
   text-align: center;
   padding: 50px 0;
   background-color: rgba(255, 255, 255, 0.1);
